@@ -1,0 +1,76 @@
+/* RegisterPage.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #a1c4fd;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #a1c4fd;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #8dbbf2;
+}
+
+.terms-conditions {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link a {
+  color: #a1c4fd;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

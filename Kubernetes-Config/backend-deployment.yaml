@@ -1,0 +1,43 @@
+# backend-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: note-app-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: note-app-backend
+  template:
+    metadata:
+      labels:
+        app: note-app-backend
+    spec:
+      containers:
+        - name: note-backend
+          image: saipreetham7/note-app-backend
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGO_URI
+              value: 'mongodb://note-mongodb:27017/noteapp'
+      #     volumeMounts:
+      #       - name: static-files-storage
+      #         mountPath: /app/public
+      # volumes:
+      #   - name: static-files-storage
+      #     persistentVolumeClaim:
+      #       claimName: static-files-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: note-app-backend
+spec:
+  selector:
+    app: note-app-backend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer

@@ -1,0 +1,75 @@
+/* LoginPage.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #74ebd5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #62d0bf;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-link a {
+  color: #74ebd5;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
