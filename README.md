@@ -37,6 +37,9 @@ note-taking-app/
 └── .gitignore                 # Ignore node_modules and other files
 ```
 
+## Application Architecture
+![!architecture](cloudAssignment.png)
+
 ## Prerequisites
 To run this application, ensure you have the following installed:
   1. Docker: <a href="https://docs.docker.com/engine/install/">Install Docker</a>
